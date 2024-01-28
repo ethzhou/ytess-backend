@@ -13,7 +13,7 @@ const io = require("socket.io")(server, {
   },
 });
 
-server.listen(8081, () => console.log("listneinggn g on port 8080"));
+server.listen(8080, () => console.log("listneinggn g on port 8080"));
 
 io.on("connection", socket => {
   console.log(`User connection: ${socket.id}`);
