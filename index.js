@@ -13,7 +13,9 @@ const io = require("socket.io")(server, {
   },
 });
 
-server.listen(8080, () => console.log("listneinggn g on port 8080"));
+// Use 8080 for production and 8081 for development
+const PORT = 8081;
+server.listen(PORT, () => console.log(`listneinggn g on port ${8081}`));
 
 io.on("connection", socket => {
   console.log(`User connection: ${socket.id}`);
