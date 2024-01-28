@@ -4,7 +4,7 @@ const app = express();
 
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
-  cors: { origin: ["*"] },
+  cors: { origin: ["http://localhost:5173"] },
 });
 
 server.listen(8080, () => console.log("listneinggn g on port 8080"));
