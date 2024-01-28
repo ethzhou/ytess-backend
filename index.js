@@ -4,7 +4,7 @@ const app = express();
 
 const server = http.createServer(app);
 const io = require("socket.io")(server, {
-  cors: { origin: ["https://ytess-backend.onrender.com", "44.226.145.213"] },
+  cors: { origin: ["*"] },
 });
 
 server.listen(8080, () => console.log("listneinggn g on port 8080"));
