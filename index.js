@@ -8,12 +8,12 @@ const io = require("socket.io")(server, {
     origin: [
       "http://localhost:5173",
       "http://localhost:4173",
-      "https://ethzhou.github.io/ytess",
+      "https://ethzhou.github.io",
     ],
   },
 });
 
-server.listen(8080, () => console.log("listneinggn g on port 8080"));
+server.listen(8081, () => console.log("listneinggn g on port 8080"));
 
 io.on("connection", socket => {
   console.log(`User connection: ${socket.id}`);
